@@ -27,7 +27,7 @@ public class ArrayEx3 {
 		
 		for(int i=0; i<100; i++) {
 			int n = (int) (Math.random() * 10);
-			int temp = number[0];
+			int temp = number[0]; // number [0]과 number[n]의 값을 서로 바꾼다.
 			number[0] = number [n];
 			number[n] = temp;
 		}
