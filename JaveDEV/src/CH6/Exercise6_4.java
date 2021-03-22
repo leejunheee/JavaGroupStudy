@@ -30,8 +30,7 @@ class Student {
 	 return kor + eng + math;
 	}
 	float getAverage() {
-		//return getTotal() / (float)3;
-	 return (float) (Math.ceil((kor+eng+math)/(double)3*10)/10);
+		return (int) (getTotal() / 3f *10 +0.5f)/10f;
 	}
 	
 }
