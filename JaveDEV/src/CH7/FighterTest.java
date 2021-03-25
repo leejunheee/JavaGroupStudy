@@ -5,7 +5,7 @@ public class FighterTest {
 	public static void main(String[] args) {
 		Fighter f = new Fighter();
 		
-		if( f instanceof Unit) {
+		if( f instanceof Unit2) {
 			System.out.println("f는 Unit클래스의 자손입니다.");
 		}
 		if( f instanceof Fightable) {
@@ -23,15 +23,15 @@ public class FighterTest {
 	}
 
 }
-class Fighter extends Unit implements Fightable {
+class Fighter extends Unit2 implements Fightable {
 	public void move(int x, int y) { }
-	public void attack(Unit u) { }
+	public void attack(Unit2 u) { }
 }
-class Unit {
+class Unit2 {
 	int currentHP; //유닛의 체력
 	int x; // 유닛의 위치x좌표
 	int y; // 유닛의 위치 y좌표
 }
 interface Fightable extends Movable, Attackable { }
 interface Movable { void move(int x, int y); }
-interface Attackable { void attack(Unit u); }
+interface Attackable { void attack(Unit2 u); }
