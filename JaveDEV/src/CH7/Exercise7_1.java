@@ -11,6 +11,7 @@ class SutdaDeck {
 		//배열 SutdaCard를 적절히 초기화.
 		for(int i =0; i<cards.length;i++) {
 			int num = i%10+1;
+			//i의 값이 0~19까지 변하는 동안 우리가 원하는 num의 값을 얻기 위해 사용.
 			boolean isKwang = (i<10)&&(num==1||num==3||num==8);	
 			
 			cards[i] = new SutdaCard(num,isKwang);
