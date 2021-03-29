@@ -8,7 +8,7 @@ class Quiz6_1 {
 		
 		int bottom, height;
 		
-		System.out.println("**** 삼각형의 넓이 구하기 ****");
+		System.out.println("*** 삼각형의 넓이 구하기 ****");
 		System.out.print("밑변 : ");	bottom = Integer.parseInt(br.readLine());
 		System.out.print("높이 : ");	height = Integer.parseInt(br.readLine());
 		
