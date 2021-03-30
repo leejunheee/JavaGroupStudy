@@ -9,12 +9,13 @@ class Quiz5_1 {
 
 		String name = "";
 		int kor, eng, mat;
-
+		
 		System.out.print("Input name : "); name = br.readLine();
 		System.out.print("kor : "); kor = Integer.parseInt(br.readLine());
 		System.out.print("eng : "); eng = Integer.parseInt(br.readLine());
 		System.out.print("mat : "); mat = Integer.parseInt(br.readLine());
-
+		
+		
 		int sum = kor + eng + mat;
 		double avg = (double) sum / 3;
 
