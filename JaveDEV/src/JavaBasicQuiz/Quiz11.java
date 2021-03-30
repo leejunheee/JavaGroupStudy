@@ -12,7 +12,6 @@ class Quiz11 {
 		
 		int a, b;
 		char op;
-		
 		System.out.print("A값을 입력하쇼 : ");	a = Integer.parseInt(br.readLine());
 		System.out.print("B값을 입력하쇼 : ");	b = Integer.parseInt(br.readLine());
 		System.out.print("연산자를 입력하쇼 : "); op = (br.readLine().charAt(0));
